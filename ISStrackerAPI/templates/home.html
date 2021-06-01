@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ISStracker</a>
+      
+  </nav>
+  
+  <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreen
+  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyAPc4iPoCaUDBJmdvpnNQ7A-LB2eKIbUnw
+    &center='{{my_lat}}','{{my_long}}'&zoom=4">
+   {{context}}
+ >
+
+{% endblock %}
